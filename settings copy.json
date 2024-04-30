@@ -1,0 +1,38 @@
+{
+    "networking": {
+        // "main_cu": "192.168.120.253", // update your cu IP here
+        // "raspi": "192.168.120.224", // update your raspberry pi IP here
+        "pixhawk_sitl": "14540@192.168.1.36:14557"
+    },
+    "ros": {
+        "msg_queue_size": 10,
+        "nodes": {
+            "main_cu": [ // add main_cu nodes here like the following
+                "mission_test.py"
+            ],
+            "raspi": [ // add the raspi nodes here like the following
+                
+            ]
+        },
+        "ignore_machines": [],
+        "ignore_nodes": []
+    },
+    "system": {
+        "debug": true,
+        "allowed_log_levels": [
+            "ERROR",
+            "INFO",
+            "DEBUG"
+        ]
+    },
+    "security": {
+        "main_cu": {
+            "username": "<ENTER MAIN CU USERNAME>", // add the main cu username here
+            "password": "<ENTER MAIN CU PASSWORD>" // add the main cu password here
+        },
+        "raspi": {
+            "username": "<ENTER RASPBERRY PI USERNAME>", // add the RasperryPi username here
+            "password": "<ENTER RASPBERRY PI PASSWORD>" // add the RasperryPi password here
+        }
+    }
+}
