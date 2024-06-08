@@ -15,7 +15,7 @@ import ros_nodes.camera_reader_node.main as camera_reader_node
 _NODE_DELAY = 0.01  # 10ms delay / operation frequency 100Hz
 
 
-if __name__ == '__main__':
+def bootstrap():
     # change this
     camera_reader_node.ros_node_setup()
 
@@ -31,3 +31,8 @@ if __name__ == '__main__':
             break
 
         time.sleep(_NODE_DELAY)
+
+
+if __name__ == '__main__':
+    bootstrap()
+    

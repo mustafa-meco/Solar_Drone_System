@@ -6,6 +6,7 @@ import base64
 import pickle
 
 import lib.ros as ros_man
+import lib.settings as set_man
 
 
 # module config

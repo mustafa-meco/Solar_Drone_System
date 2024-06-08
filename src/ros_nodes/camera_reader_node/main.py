@@ -24,7 +24,7 @@ def _ros_frame_reader(msg: ros_std_msgs.String):
 
     # decode JPEG frame
     frame = cv2.imdecode(frame, cv2.IMREAD_COLOR)
-
+    
     cv2.imshow('CAM_1', frame)
     cv2.waitKey(1)
 
